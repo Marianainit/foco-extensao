@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Foco",
+  "version": "1.0",
+  "description": "Bloqueia sites que tiram meu foco na hora de estudar.",
+  "permissions": ["declarativeNetRequest"],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "regras_de_bloqueio",
+        "enabled": true,
+        "path": "regras.json"
+      }
+    ]
+  }
+}
